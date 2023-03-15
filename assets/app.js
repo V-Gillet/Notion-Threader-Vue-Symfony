@@ -6,9 +6,14 @@
  */
 
 // any CSS you import will output into a single scss file (app.scss in this case)
-import './styles/app.scss';
+import "./styles/app.scss";
 
 // start the Stimulus application
-import './bootstrap';
+import "./bootstrap";
 
-require('bootstrap');
+require("bootstrap");
+
+import { createApp } from "vue";
+import App from "./js/App.vue";
+
+createApp(App).mount("#vue-app");
