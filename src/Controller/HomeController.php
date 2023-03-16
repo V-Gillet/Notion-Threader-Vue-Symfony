@@ -9,14 +9,11 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
 class HomeController extends AbstractController
 {
-    #[Route('/', name: 'app_home')]
+    #[Route('/', name: 'app_home',requirements: ['route'=>"^(?!.*_wdt|_profiler).+"])]
     public function index(): Response
     {
-        return $this->render('home/index.html.twig', [
-            'controller_name' => 'HomeController',
-        ]);
+        return $this->render('base.html.twig');
     }
-
 
     #[Route('/api/helloword/{name}', name: 'api_helloword')]
     public function apiHelloword(string $name): Response

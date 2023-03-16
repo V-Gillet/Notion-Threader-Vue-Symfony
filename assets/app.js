@@ -13,7 +13,10 @@ import "./bootstrap";
 
 require("bootstrap");
 
-import { createApp } from "vue";
-import App from "./js/App.vue";
+import App from "./vue/App.vue";
+import router from "./vue/router/index.js";
+import { createApp } from 'vue'
 
-createApp(App).mount("#vue-app");
+// Make sure to _use_ the router instance to make the
+// whole app router-aware.
+createApp(App).use(router).mount('#vue-app')

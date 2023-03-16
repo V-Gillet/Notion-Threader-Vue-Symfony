@@ -1,0 +1,37 @@
+@import "_theme";
+@import "~bootstrap/scss/bootstrap";
+
+.twitter-auth-btn{
+  width : 270px;
+  height : 70px;
+  margin-inline-end: 195px;
+}
+
+.bird{
+  margin-inline-end: 50px;
+}
+
+.card-wrapper{
+  width: 85%;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.card{
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  height: 450px !important;
+}
+
+.card-price{
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (max-width: 670px) {
+  .twitter-auth-btn {
+    margin-inline-end: 0px;
+  }
+
+  .bird {
+    margin-inline-end: 0px;
+    display: none;
+  }
+}

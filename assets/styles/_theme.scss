@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+$font-title : 'Poppins',sans-serif;
+$font-body : 'Barlow',sans-serif;
+$primary : #2596BE;
+$light : #FAFCFD;
+$dark : #010F14;
+
+body{
+  background: linear-gradient(270.05deg, #FFFFFF 12.43%, #FFFFFF 40.03%, #2596BE 102.35%, rgba(255, 255, 255, 0) 107.59%);
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: $font-title;
+}
+
+p, li, a, span{
+  font-family: $font-body;
+}
+
+nav{
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.fw-medium{
+  font-weight: 500;
+}
